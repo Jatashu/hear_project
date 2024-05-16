@@ -1,4 +1,4 @@
-var jsonData = [
+let jsonData = [
   {
     key: "ricS",
     name: "AX RIC-S",
@@ -116,7 +116,7 @@ function nextContent() {
 
 // Function to update the active button
 function highlightButton(index) {
-  var buttons = document.querySelectorAll(".button-1, .button-2");
+  let buttons = document.querySelectorAll(".button-1, .button-2");
   buttons.forEach((button) => button.classList.remove("active"));
   buttons[index].classList.add("active");
 }
@@ -171,7 +171,7 @@ function updateUrlParameter(key, value) {
 
 // Function to update current index from the highlighted button
 function updateCurrentIndexFromHighlight() {
-  var buttons = document.querySelectorAll(".button-1, .button-2");
+  let buttons = document.querySelectorAll(".button-1, .button-2");
   buttons.forEach((button, index) => {
     if (button.classList.contains("active")) {
       currentIndex = index;
