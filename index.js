@@ -98,7 +98,7 @@ var jsonData = [
   },
 ];
 
-var currentIndex = 0;
+let currentIndex = 0;
 
 // Function to move to the previous product
 function prevContent() {
@@ -123,26 +123,26 @@ function highlightButton(index) {
 
 // Function to update content and image based on button click
 function updateContent(index) {
-  var product = jsonData[index];
-  var buttonName = product.name;
-  var images = product.image;
-  var content = product.content;
-  var colors = product.colors || [];
+  let product = jsonData[index];
+  let buttonName = product.name;
+  let images = product.image;
+  let content = product.content;
+  let colors = product.colors || [];
 
   // Update heading content
-  var heading = document.querySelector(".carousel_content_heading span");
+  let heading = document.querySelector(".carousel_content_heading span");
   heading.innerHTML = "<b>hear.com</b> HORIZON <br />" + buttonName;
 
   // Update main image to the first image by default
   updateImage(images[0]);
 
   // Clear existing color icons
-  var colorIconsDiv = document.getElementById("colorIcons");
+  let colorIconsDiv = document.getElementById("colorIcons");
   colorIconsDiv.innerHTML = "";
 
   // Create color icons
   colors.forEach(function (color, colorIndex) {
-    var img = document.createElement("img");
+    let img = document.createElement("img");
     img.src = color;
     img.alt = buttonName;
     img.className = "image";
@@ -164,7 +164,7 @@ function updateImage(imageSrc) {
 
 // Function to update the URL parameter
 function updateUrlParameter(key, value) {
-  var url = new URL(window.location.href);
+  let url = new URL(window.location.href);
   url.searchParams.set(key, value);
   window.history.replaceState({}, "", url);
 }
