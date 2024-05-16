@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="banner">
+        <!-- Left side image -->
+        <!-- <div class="image_container"> -->
+        <img
+          class="image_container"
+          src="HORIZON_06_PRODUCT_IMG_01-1.jpg"
+          alt="Example Image"
+          loading="lazy"
+        />
+        <!-- </div> -->
+
+        <!-- Right side text -->
+        <div class="text_container">
+          <h2>The right model for every requirement.</h2>
+        </div>
+      </div>
+
+      <div class="button_model">
+        <div class="button_model_inner">
+          <div class="button-1 active btn_active" onclick="updateContent(0)">
+            <span class="desktop_view"
+              ><b>hear.com</b> HORIZON<br />
+              AX RIC-S</span
+            >
+            <span class="moblie_view">AX RIC-S</span>
+          </div>
+          <div class="button-1" onclick="updateContent(1)">
+            <span class="desktop_view"
+              ><b>hear.com</b> HORIZON<br />
+              AX RIC-R</span
+            >
+            <span class="moblie_view moblie-width">AX RIC-R</span>
+          </div>
+          <div class="button-1" onclick="updateContent(2)">
+            <span class="desktop_view"
+              ><b>hear.com</b> HORIZON<br />
+              X RIC</span
+            >
+            <span class="moblie_view"> X RIC</span>
+          </div>
+          <div class="button-1" onclick="updateContent(3)">
+            <span class="desktop_view"
+              ><b>hear.com</b> HORIZON<br />
+              AX ITC-R</span
+            >
+            <span class="moblie_view">AX ITC-R</span>
+          </div>
+          <div class="button-1" onclick="updateContent(4)">
+            <span class="desktop_view"
+              ><b>hear.com</b> HORIZON<br />
+              X CIC</span
+            >
+            <span class="moblie_view">X CIC</span>
+          </div>
+          <div class="button-2" onclick="updateContent(5)">
+            <span class="desktop_view">
+              <b>hear.com</b> HORIZON<br />
+              X RIC-S</span
+            >
+            <span class="moblie_view">X RIC-S</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="model_carousel">
+        <i
+          class="fas fa-chevron-left arrow_right f"
+          onclick="prevContent()"
+        ></i>
+        <!-- <div class="model_carousel_box"> -->
+        <div class="carousel_content">
+          <div class="carousel_content_heading">
+            <span> <b>hear.com </b> HORIZON <br />AX RIC-R </span>
+            <div class="carousel_content_images">
+              <p>select color</p>
+              <div class="color_icon" id="colorIcons"></div>
+            </div>
+          </div>
+
+          <img
+            id="mainImage"
+            src="./images/img1/rose-gold-hear.png"
+            class="hear_adis_image"
+            loading="lazy"
+          />
+
+          <!-- <div class="carousel_content_images_mobile">
+            <p>select color</p>
+            <div class="color_icon" id="colorIcon"></div>
+          </div> -->
+        </div>
+
+        <!-- </div> -->
+        <i class="fas fa-chevron-right arrow_left" onclick="nextContent()"></i>
+      </div>
+    </section>
+  </body>
+</html>
